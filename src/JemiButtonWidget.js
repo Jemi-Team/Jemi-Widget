@@ -16,7 +16,9 @@ const JemiButtonWidget = () => {
     .getAttribute("data-text");
   const style = {
     btn: {
-      display: "inline-block",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
       width: 250,
       backgroundColor: bgColor,
       borderRadius: 10,
@@ -28,19 +30,18 @@ const JemiButtonWidget = () => {
     content: {
       display: "flex",
       justifyContent: "center",
-      marginTop: 10,
+      alignItems: "center",
+      textAlign: "center",
+      width: 100 + "%",
     },
     logo: {
       display: "inline-block",
       marginRight: 5,
-      marginBottom: 5,
-      paddingBottom: 5,
     },
     text: {
       display: "inline-block",
       color: bgColor === "#BBCAF9" ? "#000" : "#fff",
       fontSize: 20,
-      textAlign: "center",
     },
   };
 
@@ -52,10 +53,7 @@ const JemiButtonWidget = () => {
       className="jemiBtn"
     >
       <div style={style.content}>
-        <img
-          src={logo}
-          style={style.logo}
-        />
+        <img src={logo} style={style.logo} />
         <span style={style.text}>{btnText}</span>
       </div>
     </a>
