@@ -28,7 +28,7 @@ const JemiButtonWidget = () => {
     content: {
       display: "flex",
       justifyContent: "center",
-      paddingTop: 10,
+      marginTop: 10,
     },
     logo: {
       display: "inline-block",
@@ -41,7 +41,6 @@ const JemiButtonWidget = () => {
       color: bgColor === "#BBCAF9" ? "#000" : "#fff",
       fontSize: 20,
       textAlign: "center",
-  
     },
   };
 
