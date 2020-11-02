@@ -41,7 +41,7 @@ const JemiButtonWidget = () => {
       color: bgColor === "#BBCAF9" ? "#000" : "#fff",
       fontSize: 20,
       textAlign: "center",
-      paddingTop: 2,
+  
     },
   };
 
